@@ -1,0 +1,134 @@
+body {
+    background: black;
+    font-family: Arial;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+    font-size: 37px;
+    font-family: monospace;
+    
+
+}
+form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+}
+.search-bar {
+   
+    flex: 1;
+    max-width: 650px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    border-style: solid;
+    border-color: transparent;
+    padding-left: 10px;
+}
+::placeholder {
+   
+    
+}
+.search-btn {
+    margin-left: -50px;
+    padding: 7px 14px;
+    font-size: 14px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: none;
+    outline: none;
+    border-style: solid;
+    cursor: pointer;
+    border-color: transparent;
+    color: #fff;
+    background-color: rgb(160, 72, 241);
+}
+span {
+    color: rgb(255, 6, 6);
+}
+.view-more-btn {
+    background-color: rgb(160, 72, 241);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 8px 10px;
+    margin-top: 40px;
+    cursor: pointer;
+    margin-left: 45%;
+    display: none;
+    margin-bottom: 70px;
+}
+.search-result {
+    width: 80%;
+    margin-top: 80px;
+    margin-left: 110px;
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+.search-result img {
+    width: 100%;
+    object-fit: cover;
+    height: 230px;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 600px)
+{
+    h1 {
+        font-size: 25px;
+        margin-top: 70px;
+    }
+
+    .search-bar {
+        flex: none;
+        width: 280px;
+        height: 30px;
+    }
+
+    .search-btn {
+        width: 70px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .search-result {
+        width: 80%;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        margin-left: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+    }
+    .search-result img {
+        width: 100%;
+        object-fit: cover;
+        height: 100px;
+        border-radius: 4px;
+    }
+    .view-more-btn {
+        background-color: rgb(160, 72, 241);
+        color: white;
+        border: none;
+        outline: none;
+        border-radius: 3px;
+        padding: 8px 10px;
+        margin-top: 20px;
+        cursor: pointer;
+        margin-left: 40%;
+        display: none;
+        margin-bottom: 35px;
+    }
+
+}
